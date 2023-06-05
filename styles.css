@@ -1,0 +1,275 @@
+@import url('https://fonts.cdnfonts.com/css/alien-league-2');
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: whitesmoke;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://t3.ftcdn.net/jpg/03/25/38/64/360_F_325386410_7XLHgFBmPH10k0GCUXbikWCAeFFC8145.jpg);
+    height: 100vh;
+}
+
+#preloader {
+    background: black url(https://cdn.dribbble.com/users/97383/screenshots/1926705/waiting-cards.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    background-size: 30%;
+    position: fixed;
+    z-index: 100;
+    opacity: 1;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    overflow: hidden;
+}
+
+.doublecontainer {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.topcontainer {
+    /* background-color: rgba(135, 207, 235, 0.597); */
+    margin-top: 5vh;
+    height: 75vh;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 0 0 1rem 20px rgba(0, 0, 0, .2);
+    background: inherit;
+    overflow: hidden;
+}
+
+.leftcontainer {
+    margin-top: 5vh;
+    box-shadow: 0 0 1rem 20px rgba(0, 0, 0, .2);
+    background: inherit;
+    overflow: hidden;
+    height: 75vh;
+    border-radius: 30px;
+    width: 25vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftcontainer:before {
+    position: absolute;
+    background: inherit;
+    box-shadow: inset 10px 20px 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 900px) {
+    .leftcontainer {
+        width: 10vh;
+    }
+}
+
+.contcards {
+    /* background-color: antiquewhite; */
+    position: relative;
+    left: 20px;
+    top: 45px;
+    height: 50%;
+    width: 100%;
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+}
+
+.contcards p:nth-child(3) {
+    font-size: 25px;
+    font-family: 'Digital Numbers', sans-serif;
+}
+
+.contcards2 {
+    /* background-color: red; */
+    color: white;
+    font-size: 15px;
+    font-family: monospace;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    height: 50%;
+    width: 100%;
+}
+
+.contcards2 p:nth-child(3) {
+    font-size: 25px;
+    font-family: 'Digital Numbers', sans-serif;
+}
+
+h1 {
+    /* background-color: rgba(135, 207, 235, 0.597); */
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    width: 35%;
+    height: 50px;
+    margin: auto;
+    letter-spacing: .2rem;
+    font-size: 25px;
+    color: #ffc107;
+    font-family: monospace, Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(227, 165, 0), 1px 1px 0 rgb(198, 136, 0), 2px 2px 0 rgb(170, 108, 0), 3px 3px 0 rgb(142, 80, 0), 4px 4px 3px rgba(0, 0, 0, 0.63), 4px 4px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, .2);
+}
+
+.playzone {
+    /* background-color: red; */
+    display: flex;
+    height: 87%;
+    position: relative;
+    top: 10px;
+    flex-direction: column;
+}
+
+h2 {
+    /* background-color: rgba(135, 207, 235, 0.597); */
+    /* width: 17%; */
+    /* text-align: center; */
+    border-radius: 10px;
+    color: white;
+    position: relative;
+    left: 10px;
+    font-size: 25px;
+    font-family: 'Alien League';
+    font-weight: 500;
+}
+
+.dealer {
+    /* background-color: red; */
+    height: 100%;
+}
+
+.you {
+    /* background-color:violet; */
+    height: 100%;
+}
+
+.cards {
+    /* background-color: black; */
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.cards2 {
+    /* background-color: black; */
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* .card{
+    background-image:url(./cards/revers.jpg) ;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position : center center;
+} */
+
+.card {
+    /* margin: auto; */
+    /* background-color: blue; */
+    position: relative;
+    top: 10px;
+    height: 80%;
+    width: 15%;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    height: 200px;
+    left: 11px;
+    position: relative;
+}
+
+.bottomcontainer {
+    /* margin-left: 10vh; */
+    /* position: relative; */
+    /* top: -690px; */
+    /* left: 20px; */
+    margin-top: 5vh;
+    box-shadow: 0 0 1rem 20px rgba(0, 0, 0, .2);
+    background: inherit;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    height: 75vh;
+    border-radius: 30px;
+    justify-content: space-around;
+    width: 25vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomcontainer:before {
+    position: absolute;
+    background: inherit;
+    box-shadow: inset 10px 20px 2000px rgba(255, 255, 255, .5);
+    filter: blur(10px);
+    margin: -20px;
+    backdrop-filter: blur(5px);
+}
+
+button {
+    /* padding: 10px 5px; */
+    width: 120px;
+    height: 80px;
+    border-radius: 1em;
+    background-color: white;
+    border: 5px solid #ffc107;
+    box-shadow: 0px 0px 0 rgb(227, 165, 0), 1px 1px 0 rgb(198, 136, 0), 2px 2px 0 rgb(170, 108, 0), 3px 3px 0 rgb(142, 80, 0), 4px 4px 3px rgba(0, 0, 0, 0.63), 4px 4px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, .2);
+}
+
+.TxtEffect {
+    letter-spacing: .2rem;
+    font-size: 17px;
+    color: #ffc107;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(227, 165, 0), 1px 1px 0 rgb(198, 136, 0), 2px 2px 0 rgb(170, 108, 0), 3px 3px 0 rgb(142, 80, 0), 4px 4px 3px rgba(0, 0, 0, 0.63), 4px 4px 1px rgba(0, 0, 0, 0.5), 0px 0px 3px rgba(0, 0, 0, .2);
+}
+
+.btn:hover {
+    transform: translateY(5px);
+    box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.btn:active {
+    transform: translateY(-3px);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: all .3s;
+}

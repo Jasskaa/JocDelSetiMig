@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://www.pngkey.com/png/full/154-1547641_become-a-blackjack-pro-in-just-5-minutes.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>BlackJack</title>
+</head>
+
+<body>
+    <div id="preloader" class="preloader"></div>
+    <div style="height: 100vh" class="doublecontainer">
+        <div class="leftcontainer">
+            <div class="contcards">
+                <p>Dealer's Points:</p>
+                <br>
+                <p>#</p>
+            </div>
+            <div class="contcards2">
+                <p>Your Points:</p>
+                <br>
+                <p>#</p>
+            </div>
+        </div>
+
+        <div class="topcontainer">
+            <h1>Benvinguts a Set i mig</h1>
+            <div class="playzone">
+                <div class="dealer">
+                    <h2>Dealer's Cards:</h2>
+                    <div class="cards">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                </div>
+                <div class="you">
+                    <h2>Your Cards:</h2>
+                    <div class="cards2">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottomcontainer">
+            <div class="hit">
+                <button class="btn" id="hit"><span class="TxtEffect">Hit</span></button>
+            </div>
+            <div class="stand">
+                <button class="btn" id="stay" onclick="funtiondisable()"><span class="TxtEffect">Stay</span></button>
+            </div>
+            <div class="reset">
+                <button class="btn" onclick="location.reload()"><span class="TxtEffect">Restart Game</span></button>
+            </div>
+            <div class="newGame">
+                <button class="btn" id="repetir" onclick="myfunction()"><span class="TxtEffect">Repertir
+                        Carta</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/Game.js"></script>
+    <script src="./src/Card.js"></script>
+    <script src="./src/Deck.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
